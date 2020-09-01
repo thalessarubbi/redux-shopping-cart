@@ -3,19 +3,19 @@
     {
       "id": 1,
       "title": "Casaco maneiro",
-      "image": "assets/cool_jacket.svg",
+      "image": "https://raw.githubusercontent.com/thalessarubbi/redux-shopping-cart/28a9a8d1d7a703078d0cf36f1767dba9e2167576/src/assets/cool_jacket.svg",
       "price": 290.90
     },
     {
       "id": 2,
       "title": "Óculos barato",
-      "image": "assets/cheap_glasses.svg",
+      "image": "https://raw.githubusercontent.com/thalessarubbi/redux-shopping-cart/28a9a8d1d7a703078d0cf36f1767dba9e2167576/src/assets/cheap_glasses.svg",
       "price": 20.90
     },
     {
       "id": 3,
       "title": "Tênis da moda",
-      "image": "assets/fashion_sneakers.svg",
+      "image": "https://raw.githubusercontent.com/thalessarubbi/redux-shopping-cart/28a9a8d1d7a703078d0cf36f1767dba9e2167576/src/assets/fashion_sneakers.svg",
       "price": 500.00
     }
   ],

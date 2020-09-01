@@ -2,17 +2,10 @@ import styled from "styled-components";
 
 export const ItemCard = styled.article`
 width: 300px;
-background: #F15A24;
+background: #26C3EB;
 border-radius: 20px;
 display: flex;
 flex-direction: column;
-justify-content: center;
-
-  img {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px 20px 0px 0;
-  }
 
   strong {
     padding: 10px;
@@ -26,7 +19,7 @@ justify-content: center;
   }
 
   button {
-    background-color: #00AB9E;
+    background-color: #00b300;
     padding: 10px;
     outline: none;
     border: 0;
@@ -37,6 +30,26 @@ justify-content: center;
   }
 
   button:hover{
-    background-color: #00AB5E;
+    background-color: #008000;
+  }
+`;
+
+export const ItemImage = styled.div`
+  position: relative;
+  width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 20px 20px 0px 0;
+  }
+
+  img + img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 25%;
+    border-radius: 20px 20px 0px 0;
   }
 `;

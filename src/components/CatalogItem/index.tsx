@@ -3,9 +3,9 @@ import { IProduct } from '../../store/modules/cart/types';
 import { addProductToCartRequest } from '../../store/modules/cart/actions';
 import { useDispatch, useSelector } from 'react-redux';
 import { IState } from '../../store';
-import { ItemCard } from './styles';
+import { ItemCard, ItemImage } from './styles';
 
-import coolJacketImg from '../../assets/cool_jacket.svg'
+import soldOutIcon from '../../assets/icons/soldout_icon.svg';
 
 interface CatalogItemProps {
   product: IProduct;
@@ -25,17 +25,20 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
   
   return (
     <ItemCard>
-      <img alt="Product" src={product.image} />
-      <strong>{product.title}</strong>
+      <ItemImage>
+        <img alt="Product" src={product.image} />
+        {hasFailedStockCheck && <img src={soldOutIcon} alt="Sold out"/>}
+      </ItemImage>
+      <strong>{product.title}{hasFailedStockCheck && "(esgotado)"}</strong>
       <span>R$ {product.price}</span>
-      
-      <button 
-        onClick={handleAddProductToCart}
-        type="submit">
-          Comprar
-        </button>
 
-      {hasFailedStockCheck && <span style={{color:'red'}}>Falta de estoque</span>}
+      {!hasFailedStockCheck &&
+        <button 
+          onClick={handleAddProductToCart}
+          type="submit">
+            Comprar
+        </button>
+        }
     </ItemCard>
     )
   }
