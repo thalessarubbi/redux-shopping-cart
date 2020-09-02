@@ -1,44 +1,90 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    <img alt="Redux shopping cart" src="src/assets/banner.gif" />
+    <br>
+    Redux Shopping Cart
+    <br>
+    <img src="https://img.shields.io/github/issues/thalessarubbi/redux-shopping-cart" />
+    <img src="https://img.shields.io/github/forks/thalessarubbi/redux-shopping-cart" />
+    <img src="https://img.shields.io/github/stars/thalessarubbi/redux-shopping-cart" />
+    <img src="https://img.shields.io/github/license/thalessarubbi/redux-shopping-cart" />
+</h1>
 
-## Available Scripts
+<div align="center">
+    <h4 style="margin-bottom: 0;"> 🏁  Finished.  🏁</h4>
+    <h5 style="margin-top: 0;">(for now)</h5>
+</div>
 
-In the project directory, you can run:
+<p align="center">Redux Shopping Cart is a project created to get familiar with the use of Redux and Redux saga technology.</p>
 
-### `yarn start`
+<p align="center">
+ <a href="#-goal">Goal</a> •
+ <a href="#-features">Features</a> • 
+ <a href="#-requirements">Requirements</a> • 
+ <a href="#%EF%B8%8F-runing-project-%EF%B8%8F">Running project</a> • 
+ <a href="#-technologies">Technologies</a> • 
+ <a href="#%EF%B8%8F-author">Author</a>
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🎯 Goal
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<p align="center">Redux Shopping Cart is a small and simple project developed to apply the flux architecture concepts to a shopping cart web page, using the Redux and Redux saga technology.</p>
 
-### `yarn test`
+## 🎩 Features
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [x] List products
+- [x] Add products to cart
+- [x] Prevents sold out products from beeing added to cart
 
-### `yarn build`
+## 👨🏻‍🔬 Requirements
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before we begin, you'll need to have the following dependencies installed:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/).
+Besides, it would be great that you have a code editor to work on this project, such as [VSCode](https://code.visualstudio.com/).
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 🏃‍♀️ Runing project 🏃‍♂️
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clone the repo
+$ git clone <https://github.com/thalessarubbi/redux-shopping-cart.git>
 
-### `yarn eject`
+# Access project folder from a terminal
+$ cd redux-shopping-cart
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Install dependencies
+$ yarn
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Start fake sever ####
+$ yarn server
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# The server will start at port :3333 - access <http://localhost:3333>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Start web app ####
+$ yarn start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# The web app will start at port :3000 - access <http://localhost:3000>
+```
+
+## 🛠 Technologies
+
+- [React](https://pt-br.reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Redux saga](https://redux-saga.js.org/)
+- [Axios](https://github.com/axios/axios)
+- [styled-components](https://github.com/axios/axios)
+- [VS Code](https://code.visualstudio.com/)
+
+## ✍️ Author
+---
+<br />
+<img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/4613797?s=460&u=0dea595bfe97ee91a926f06a3fb2040893d58456&v=4" width="100px;" alt=""/>
+<br />
+<sub><b>Thales Sarubbi</b></sub>
+
+
+Made with 💙 by Thales Sarubbi 🗣 Let's talk!
+
+
+[![Linkedin Badge](https://img.shields.io/badge/-Thales%20Sarubbi-26c3eb?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thales-sarubbi/)](https://www.linkedin.com/in/thales-sarubbi/) 
+[![Gmail Badge](https://img.shields.io/badge/-thalessarubbi@gmail.com-26c3eb?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:thalessarubbi@gmail.com)](mailto:thalessarubbi@gmail.com)
